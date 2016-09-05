@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/img_source_test"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="本地，网络，资源，asset中获取图片"
+        android:clickable="true"
+        android:onClick="onImageSourceTest"
+        />
+
+    <TextView
+        android:id="@+id/drawee_controller"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="图片加载控制器"
+        android:clickable="true"
+        android:onClick="onDraweeController"
+        />
+
+    <TextView
+        android:id="@+id/net_controller"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="drawee网络请求控制器"
+        android:clickable="true"
+        android:onClick="onPiplineController"
+        />
+    <TextView
+        android:id="@+id/hierchery_controller"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="hierchery模块"
+        android:clickable="true"
+        android:onClick="onHiercheryController"
+        />
+</LinearLayout>

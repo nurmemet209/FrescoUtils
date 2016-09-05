@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nurmemet.frescoexample.MainActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="缓存中读取!"
+                />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/frome_cache"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                fresco:actualImageScaleType="fitXY"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asset目录中读取!"
+                />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/frome_asset"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clickable="true"
+                fresco:actualImageScaleType="fitXY"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="读取本地文件!"
+                />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/frome_local"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clickable="true"
+                fresco:actualImageScaleType="fitXY"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="资源文件中读取!"
+                />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/frome_res"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clickable="true"
+                fresco:actualImageScaleType="fitXY"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
