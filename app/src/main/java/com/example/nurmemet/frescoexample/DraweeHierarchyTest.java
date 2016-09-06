@@ -22,15 +22,13 @@ public class DraweeHierarchyTest extends Activity {
         test = (SimpleDraweeView) findViewById(R.id.hiechery_test);
         test.setImageURI(imgAddress);
         GenericDraweeHierarchy hierarchy = test.getHierarchy();
-
         RoundingParams roundingParams = new RoundingParams();
         // 设置边框颜色和宽度
-        roundingParams.setBorder(Color.parseColor("#ff4789"), 30.0f);
+        roundingParams.setBorder(Color.RED, 10.0f);
         // 设置圆角半径
-        roundingParams.setCornersRadius(50.0f);
+        roundingParams.setCornersRadius(20.0f);
         hierarchy.setRoundingParams(roundingParams);
         roundingParams.setRoundAsCircle(true);
-
 
         //drawee支持如下属性,并且以下属性都可以用GenericDraweeHierarchy代码控制
         //fresco:fadeDuration="300" // 淡入淡出的持续时间

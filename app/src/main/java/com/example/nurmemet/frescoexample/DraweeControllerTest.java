@@ -20,6 +20,7 @@ public class DraweeControllerTest extends Activity {
 
     private SimpleDraweeView img;
     private SimpleDraweeView thumbnail;
+    private SimpleDraweeView gifImg;
     private String imgAddress = "http://img3.imgtn.bdimg.com/it/u=2093281992,1989175113&fm=11&gp=0.jpg";
 
     @Override
@@ -28,6 +29,7 @@ public class DraweeControllerTest extends Activity {
         setContentView(R.layout.drawee_controller_test);
         img = (SimpleDraweeView) findViewById(R.id.drawee_test);
         thumbnail = (SimpleDraweeView) findViewById(R.id.thumbnail);
+        gifImg = (SimpleDraweeView) findViewById(R.id.gif_test);
         ControllerListener listener = new ControllerListener() {
             @Override
             public void onSubmit(String id, Object callerContext) {
@@ -83,5 +85,13 @@ public class DraweeControllerTest extends Activity {
                 .setImageRequest(request)
                 .build();
         thumbnail.setController(thumbnailController);
+
+        //gif显示
+        //要添加这个库 compile 'com.facebook.fresco:animated-gif:0.12.0'
+        String gifAddress = "http://images.missyuan.com/attachments/day_110808/20110808_9fb3173c11a2f20005ee71TDj0m1C1nm.gif";
+        DraweeController gifController = Fresco.newDraweeControllerBuilder().setUri(gifAddress).setAutoPlayAnimations(true).build();
+        gifImg.setController(gifController);
+
+
     }
 }

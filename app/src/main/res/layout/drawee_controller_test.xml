@@ -1,36 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              xmlns:fresco="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
     >
 
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="多图请求"
-        />
-    <com.facebook.drawee.view.SimpleDraweeView
-        android:id="@+id/drawee_test"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:clickable="true"
-        fresco:actualImageScaleType="fitXY"
-        />
+        android:layout_height="match_parent"
+        >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="缩略图显示"
-        />
-    <com.facebook.drawee.view.SimpleDraweeView
-        android:id="@+id/thumbnail"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:clickable="true"
-        fresco:actualImageScaleType="fitXY"
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="多图请求"
+                />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/drawee_test"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clickable="true"
+                fresco:actualImageScaleType="fitXY"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="缩略图显示"
+                />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clickable="true"
+                fresco:actualImageScaleType="fitXY"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="显示gif"
+                />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/gif_test"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clickable="true"
+                fresco:actualImageScaleType="fitXY"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
