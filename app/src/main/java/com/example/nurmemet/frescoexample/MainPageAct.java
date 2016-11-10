@@ -37,4 +37,9 @@ public class MainPageAct extends Activity {
         Intent intent = new Intent(this, DraweeHierarchyTest.class);
         startActivity(intent);
     }
+
+    public void onDownload(View view){
+        Intent intent = new Intent(this, DownLoadAct.class);
+        startActivity(intent);
+    }
 }

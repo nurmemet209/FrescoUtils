@@ -44,4 +44,13 @@
         android:clickable="true"
         android:onClick="onHiercheryController"
         />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="根据地址，大小，下载图片"
+        android:clickable="true"
+        android:onClick="onDownload"
+        />
 </LinearLayout>
