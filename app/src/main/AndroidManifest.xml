@@ -24,6 +24,7 @@
         <activity android:name=".ImagePiplineController"/>
         <activity android:name=".DraweeHierarchyTest"/>
         <activity android:name=".DownLoadAct"/>
+        <activity android:name=".CacheAddrAct"/>
     </application>
 
 </manifest>

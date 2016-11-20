@@ -53,4 +53,14 @@
         android:clickable="true"
         android:onClick="onDownload"
         />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="获取本地缓存图片地址"
+        android:clickable="true"
+        android:onClick="getChachedAddr"
+        />
 </LinearLayout>

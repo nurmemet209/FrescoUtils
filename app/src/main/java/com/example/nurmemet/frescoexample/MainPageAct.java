@@ -42,4 +42,10 @@ public class MainPageAct extends Activity {
         Intent intent = new Intent(this, DownLoadAct.class);
         startActivity(intent);
     }
+
+
+    public void getChachedAddr(View view){
+        Intent intent = new Intent(this, CacheAddrAct.class);
+        startActivity(intent);
+    }
 }
