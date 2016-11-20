@@ -25,7 +25,7 @@ fromeRes.setImageURI(Uri.parse("res:///" + R.mipmap.frome_res));
 
 ```
 
-![](images/fresco/fresco_local_asset.png)
+![](images/fresco_local_asset.png)
 
 
 
